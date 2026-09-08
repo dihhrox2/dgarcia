@@ -28,7 +28,9 @@ Somente ativos autorizados podem ser incorporados ao site. Para cada ativo futur
 
 ## Inventário atual
 
-Não há assets no repositório. A foto profissional do hero é necessária, mas permanece pendente de fornecimento, autorização e otimização. Não se aplica inventário de logos, fotos, ilustrações, vídeos ou fontes nesta fase.
+| Arquivo | Origem e autorização | Uso |
+| --- | --- | --- |
+| `assets/diego-garcia-profile.png` | Foto fornecida e autorizada por Diego Garcia em 08/09/2026 | Retrato no cartão de perfil. |
 
 ## Manutenção e substituição
 

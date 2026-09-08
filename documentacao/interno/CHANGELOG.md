@@ -4,6 +4,7 @@
 
 ### Alterado
 
+- Substituído o monograma provisório pelo retrato profissional autorizado de Diego Garcia.
 - Remodelada a aba Habilidades em grupos de Tecnologia e operação e Criação e inovação.
 - Adicionados cartões públicos para atendimentos e incidentes, sistemas e endpoints, identidade e acessos, aplicativos corporativos, redes e conectividade, ativos e operação de campo, e documentação e procedimentos.
 - Adicionada a competência Programação com IA, com referência a vibe coding e uso do Codex.
