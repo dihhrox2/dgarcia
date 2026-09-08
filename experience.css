@@ -1,0 +1,33 @@
+.record header {
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.record-employer {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+}
+
+.record-employer strong {
+  font-size: 17px;
+  letter-spacing: -0.02em;
+}
+
+.record .record-employer span {
+  background: transparent;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  padding: 0;
+}
+
+.record h3 {
+  color: var(--blue);
+  font-size: 14px;
+  font-weight: 650;
+  margin: 0;
+}

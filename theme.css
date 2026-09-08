@@ -1,0 +1,69 @@
+.side-rail .theme-toggle {
+  align-items: center;
+  background: #1b1b1d;
+  border: 0;
+  border-radius: 18px;
+  cursor: pointer;
+  display: flex;
+  gap: 10px;
+  height: 58px;
+  justify-content: center;
+  padding: 0;
+  width: auto;
+}
+
+.theme-icon--sun {
+  fill: none;
+  height: 20px;
+  stroke: #fff;
+  stroke-linecap: round;
+  stroke-width: 2;
+  width: 20px;
+}
+
+.theme-indicator {
+  align-items: center;
+  border: 2px solid transparent;
+  border-radius: 50%;
+  display: grid;
+  height: 30px;
+  justify-items: center;
+  width: 30px;
+}
+
+.theme-icon--moon {
+  fill: #fff;
+  height: 17px;
+  width: 17px;
+}
+
+.theme-toggle.theme-is-light .theme-indicator--sun,
+.theme-toggle.theme-is-dark .theme-indicator--moon {
+  background: var(--blue);
+  border-color: var(--blue);
+}
+
+html[data-theme="light"] .side-rail .nav-tab:not(.active) {
+  color: #17171b;
+}
+
+html[data-theme="light"] .side-rail .nav-tab.active {
+  background: #234bc4;
+  color: #fff;
+}
+
+html[data-theme="light"] .side-rail .theme-toggle {
+  background: #fff;
+}
+
+html[data-theme="light"] .theme-indicator--moon .theme-icon--moon {
+  fill: #17171b;
+}
+
+@media (max-width: 900px) {
+  .theme-toggle {
+    height: 46px;
+    min-width: 100px;
+    width: 100px;
+  }
+}

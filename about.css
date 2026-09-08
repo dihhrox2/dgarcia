@@ -1,0 +1,28 @@
+.summary-list b {
+  justify-self: start;
+  width: 72px;
+}
+
+.summary-list > div {
+  grid-template-columns: 72px 1fr;
+}
+
+.profile-rotator {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  min-height: 1.35em;
+}
+
+.typing-cursor {
+  animation: cursor-blink 750ms step-end infinite;
+  background: currentColor;
+  display: inline-block;
+  height: 1.05em;
+  margin-left: 3px;
+  width: 2px;
+}
+
+@keyframes cursor-blink {
+  50% { opacity: 0; }
+}
