@@ -1,55 +1,101 @@
 .skill-group {
-  padding: 22px 22px 0;
+  border-bottom: 1px solid var(--line);
+  padding: 0;
 }
 
 .skill-group + .skill-group {
-  margin-top: 22px;
-  padding-top: 22px;
-  border-top: 1px solid var(--line);
-}
-
-.skill-group:last-child {
-  padding-bottom: 22px;
+  border-top: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .skill-group-title {
-  margin: 0 0 14px;
+  margin: 0;
+}
+
+.skill-toggle {
+  align-items: center;
+  background: transparent;
+  border: 0;
+  color: var(--blue);
+  cursor: pointer;
+  display: grid;
+  font: inherit;
+  gap: 14px;
+  grid-template-columns: minmax(0, 1fr) auto;
+  padding: 22px;
+  text-align: left;
+  width: 100%;
+}
+
+.skill-toggle__label {
   font-size: 16px;
+  font-weight: 700;
 }
 
-.skill-group-title span {
-  color: var(--blue);
-}
-
-#skills .panel-title h2,
-#skills .skill-group-title {
-  color: var(--blue);
-}
-
-#skills .panel-title h2 span,
-#skills .skill-group-title span {
+.skill-toggle__label span {
   color: var(--text);
+}
+
+.skill-toggle__indicator {
+  color: var(--blue);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1;
+  transition: transform 160ms ease;
+}
+
+.skill-toggle[aria-expanded="true"] .skill-toggle__indicator {
+  transform: rotate(45deg);
+}
+
+.skill-content {
+  border-top: 1px solid var(--line);
 }
 
 .skill-cards {
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  padding: 0;
+  padding: 22px;
 }
 
 .skill-cards article {
-  min-height: 200px;
+  min-height: 0;
+  padding: 16px;
+}
+
+.skill-cards i {
+  font-size: 22px;
+}
+
+.skill-cards article h3 {
+  font-size: 15px;
+  margin: 12px 0 7px;
+}
+
+.skill-cards article p {
+  font-size: 12px;
+  line-height: 1.55;
+}
+
+#skills .panel-title h2 {
+  color: var(--blue);
+}
+
+#skills .panel-title h2 span {
+  color: var(--text);
 }
 
 @media (max-width: 560px) {
-  .skill-group {
-    padding: 18px 14px 0;
-  }
-
-  .skill-group:last-child {
-    padding-bottom: 18px;
+  .skill-toggle {
+    padding: 18px;
   }
 
   .skill-cards {
     grid-template-columns: 1fr;
+    padding: 18px 14px;
+  }
+
+  .skill-cards article {
+    padding: 16px;
   }
 }

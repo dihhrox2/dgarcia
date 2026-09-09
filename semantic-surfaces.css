@@ -1,0 +1,186 @@
+:root {
+  --surface-explanatory: #22242b;
+  --surface-radius: 10px;
+  --surface-gutter: 16px;
+}
+
+html[data-theme="light"] {
+  --surface-explanatory: #eff0f4;
+}
+
+#about .about-summary > div:first-child,
+.profile-card,
+#about .summary-list,
+.competency-grid article,
+.record-content,
+.education-list article > div,
+.course-timeline article,
+.skill-cards article,
+.service-content,
+.project-info,
+.additional-list article,
+.contact-list > * {
+  background: var(--surface-explanatory);
+}
+
+.profile-copy {
+  background: var(--surface-explanatory);
+  border-radius: var(--surface-radius);
+  margin: 14px 14px 0;
+}
+
+.profile-card {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: calc(var(--surface-radius) * 2);
+}
+
+.profile-media {
+  border-radius: var(--surface-radius);
+  box-shadow: 0 8px 20px rgb(0 0 0 / 18%);
+  margin: 14px 14px 0;
+}
+
+.profile-photo {
+  border-radius: inherit;
+}
+
+#about .panel-title h2,
+#about .panel-title h2 span,
+#about .subheading h3,
+#about .subheading h3 span,
+#experience .panel-title h2,
+#experience .panel-title h2 span,
+#education .panel-title h2,
+#education .panel-title h2 span,
+#skills .panel-title h2,
+#skills .panel-title h2 span,
+#projects .panel-title h2,
+#projects .panel-title h2 span,
+#services .panel-title h2,
+#services .panel-title h2 span,
+#additional .panel-title h2,
+#additional .panel-title h2 span,
+#contact .panel-title h2,
+#contact .panel-title h2 span,
+.education-toggle > span:first-child,
+.education-toggle > span:first-child > span,
+.skill-toggle,
+.skill-toggle__label,
+.skill-toggle__label span {
+  color: var(--text);
+}
+
+.profile-spacer {
+  background: var(--surface-explanatory);
+  border-radius: var(--surface-radius);
+  flex: 1;
+  margin: 14px;
+}
+
+.profile-links {
+  background: var(--panel);
+}
+
+.profile-actions,
+.profile-actions button,
+.profile-actions a {
+  background: var(--panel);
+}
+
+#about .about-summary > .summary-list {
+  border-left: 0;
+  border-top: 0;
+  border-radius: var(--surface-radius);
+  margin: 14px;
+  padding: var(--surface-gutter);
+}
+
+#about .about-summary > div:first-child {
+  border-radius: var(--surface-radius);
+  margin: 14px 0 14px 14px;
+  padding: var(--surface-gutter);
+}
+
+#about .competency-grid {
+  gap: 12px;
+  padding: 14px;
+}
+
+#about .competency-grid article,
+#about .competency-grid article:nth-child(even) {
+  border: 1px solid var(--line);
+  border-radius: var(--surface-radius);
+}
+
+.skill-cards article {
+  border-radius: var(--surface-radius);
+}
+
+.service-accordion,
+.project-card {
+  border-radius: var(--surface-radius);
+  overflow: hidden;
+}
+
+.record-content,
+.education-list article > div,
+.additional-list article,
+.contact-list > * {
+  border-radius: var(--surface-radius);
+}
+
+.record-content {
+  margin: 0 0 16px;
+  padding: var(--surface-gutter);
+}
+
+.education-list article > div {
+  align-self: stretch;
+  padding: 12px 14px;
+}
+
+.additional-list article {
+  border-bottom: 0;
+  margin-bottom: 12px;
+  padding: var(--surface-gutter);
+}
+
+.additional-list article:last-child {
+  margin-bottom: 0;
+}
+
+.contact-list > * {
+  border-bottom: 0;
+  margin-bottom: 12px;
+  padding: var(--surface-gutter);
+}
+
+.contact-list > *:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 1100px) and (min-width: 561px) {
+  .contact-list > * {
+    grid-template-columns: 86px minmax(0, 1fr) 20px;
+  }
+
+  .contact-list b {
+    min-width: 0;
+    overflow-wrap: anywhere;
+  }
+}
+
+@media (max-width: 560px) {
+  :root {
+    --surface-gutter: 14px;
+  }
+
+  #about .about-summary > div:first-child {
+    margin: 14px 14px 7px;
+  }
+
+  #about .about-summary > .summary-list {
+    margin: 7px 14px 14px;
+  }
+}

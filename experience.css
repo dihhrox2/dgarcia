@@ -1,7 +1,30 @@
-.record header {
-  align-items: flex-start;
-  flex-direction: column;
+.record {
+  padding: 0;
+}
+
+.record-heading {
+  margin: 0;
+}
+
+.record-toggle {
+  align-items: center;
+  background: transparent;
+  border: 0;
+  color: var(--text);
+  cursor: pointer;
+  display: grid;
+  font: inherit;
+  gap: 12px;
+  grid-template-columns: minmax(0, 1fr) auto;
+  padding: 19px 0;
+  text-align: left;
+  width: 100%;
+}
+
+.record-summary {
+  display: grid;
   gap: 4px;
+  min-width: 0;
 }
 
 .record-employer {
@@ -30,6 +53,35 @@
   color: var(--text);
   font-size: 14px;
   font-weight: 650;
+  margin: 0;
+}
+
+.record-role {
+  color: var(--text);
+  font-size: 14px;
+  font-weight: 650;
+}
+
+.record-toggle__indicator {
+  color: var(--blue);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1;
+  transition: transform 160ms ease;
+}
+
+.record-toggle[aria-expanded="true"] .record-toggle__indicator {
+  transform: rotate(45deg);
+}
+
+.record-content {
+  border-top: 1px solid var(--line);
+  padding: 14px 0 19px;
+}
+
+.record-content p {
+  color: var(--muted);
+  line-height: 1.5;
   margin: 0;
 }
 
