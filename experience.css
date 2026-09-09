@@ -12,6 +12,7 @@
 }
 
 .record-employer strong {
+  color: var(--blue);
   font-size: 17px;
   letter-spacing: -0.02em;
 }
@@ -26,8 +27,16 @@
 }
 
 .record h3 {
-  color: var(--blue);
+  color: var(--text);
   font-size: 14px;
   font-weight: 650;
   margin: 0;
+}
+
+#experience .panel-title h2 {
+  color: var(--blue);
+}
+
+#experience .panel-title h2 span {
+  color: var(--text);
 }

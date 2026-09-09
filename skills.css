@@ -21,6 +21,16 @@
   color: var(--blue);
 }
 
+#skills .panel-title h2,
+#skills .skill-group-title {
+  color: var(--blue);
+}
+
+#skills .panel-title h2 span,
+#skills .skill-group-title span {
+  color: var(--text);
+}
+
 .skill-cards {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   padding: 0;

@@ -15,7 +15,7 @@
 | Apresentação | Sintetizar atuação ampla em tecnologia | Base factual disponível; copy pendente |
 | Competências | Comunicar frentes de atuação em cartões | Taxonomia e textos pendentes |
 | Trajetória | Apresentar experiência selecionada em blocos expansíveis | Base factual disponível; curadoria pendente |
-| Formação | Informar Sistemas de Informação e formação relevante | Base factual disponível; texto pendente |
+| Formação | Reunir formação acadêmica, cursos e certificações | Títulos alinhados e timeline cronológica agrupada por ano |
 | Habilidades | Organizar ferramentas e conhecimentos aprovados | Curadoria pendente |
 | Projetos pessoais | Demonstrar trabalhos autorais por meio de cards | Itens, imagens e links pendentes |
 | Certificações e conquistas | Reservar espaço para evidências aprovadas | Seção sem itens públicos inicialmente |

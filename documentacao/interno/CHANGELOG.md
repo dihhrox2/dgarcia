@@ -4,6 +4,18 @@
 
 ### Alterado
 
+- Substituída a imagem de perfil pelo retrato autorizado mais recente.
+- Transformados os cartões de Serviços em menus expansíveis exclusivos e acessíveis.
+- Adicionada a aba Serviços, com cartões editáveis para TI, criação e IA e campos de preço inicial.
+- Convertida visualmente a assinatura pessoal para letras maiúsculas.
+- Adicionado marcador central do ano vigente no topo da timeline de cursos.
+- Movidos os marcadores anuais para o último cartão de cada grupo da timeline de cursos.
+- Agrupados os indicadores anuais da timeline de cursos e alinhado o título Cursos e certificações ao cabeçalho da Formação.
+- Consolidado o título da aba como Formação acadêmica, com remoção do cabeçalho interno duplicado.
+- Reordenada a Formação acadêmica e removida a borda do último item.
+- Substituídas as colunas de cursos por timeline cronológica alternada, com eixo lateral em telas pequenas.
+- Ajustado o título visual do cartão de perfil para Diego Garcia, preservando o nome completo em metadados e acessibilidade.
+- Unificada a antiga aba Cursos e certificações à aba Formação, com preservação do endereço legado `#cursos`.
 - Substituído o monograma provisório pelo retrato profissional autorizado de Diego Garcia.
 - Remodelada a aba Habilidades em grupos de Tecnologia e operação e Criação e inovação.
 - Adicionados cartões públicos para atendimentos e incidentes, sistemas e endpoints, identidade e acessos, aplicativos corporativos, redes e conectividade, ativos e operação de campo, e documentação e procedimentos.

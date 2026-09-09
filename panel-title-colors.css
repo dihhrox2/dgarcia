@@ -1,0 +1,11 @@
+#projects .panel-title h2,
+#additional .panel-title h2,
+#contact .panel-title h2 {
+  color: var(--blue);
+}
+
+#projects .panel-title h2 span,
+#additional .panel-title h2 span,
+#contact .panel-title h2 span {
+  color: var(--text);
+}

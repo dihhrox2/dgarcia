@@ -42,3 +42,13 @@
   object-position: center 20%;
   width: 100%;
 }
+
+#about .panel-title h2,
+#about .subheading h3 {
+  color: var(--blue);
+}
+
+#about .panel-title h2 span,
+#about .subheading h3 span {
+  color: var(--text);
+}
