@@ -14,7 +14,7 @@
 | WhatsApp | Link ativo para conversa com a mensagem “Olá eu vi seu site!” |
 | E-mail | Link ativo `mailto:` |
 | Formulário | Não implementado |
-| Currículo | Botão desabilitado |
+| Currículo | Link ativo para página visualizadora local em nova aba |
 
 ## Projetos e serviços
 

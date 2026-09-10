@@ -62,6 +62,7 @@ html[data-theme="light"] .theme-indicator--moon .theme-icon--moon {
 
 @media (max-width: 900px) {
   .side-rail .theme-toggle {
+    border: 2px solid var(--blue);
     bottom: 16px;
     box-shadow: var(--shadow);
     height: 46px;

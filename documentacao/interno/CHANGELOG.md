@@ -1,7 +1,29 @@
 # Changelog
 
+- Preparada a base técnica de SEO para `https://dgarcia.com.br/`: canônica absoluta, `robots.txt`, sitemap da homepage e do PDF original e JSON-LD de `WebSite` e `Person` com fatos públicos.
+- Movidos os dois cases publicados para o HTML estático, preservando integralmente seus textos e links; o script não é mais necessário para sua descoberta.
+- Priorizado o retrato em WebP com fallback e dimensões reservadas; mantidos os PNGs originais com transparência no carrossel, com carregamento sob demanda dos itens não exibidos.
+- Desativado o canvas de fundo quando há preferência por redução de movimento.
+- Registradas como pendências externas a configuração de HTTPS, redirecionamento de `www`, MIME/cache do provedor e verificação no Google Search Console; não foram adicionados analytics, pixels ou cookies.
 - Recriado o contorno do perfil com uma borda externa de 1 px no agrupamento e uma divisória de 1 px na identificação; removida a camada sobreposta anterior.
 - Aumentados para 2 px o contorno externo e a divisória do perfil para melhorar a estabilidade visual em diferentes painéis e larguras.
+- Publicado o currículo `Diego-Garcia-Analista-TI-Curriculo.pdf` sem alterações, com abertura em página visualizadora local em nova aba pelo cartão de perfil.
+- Adicionado ao topo da timeline de 2026 o curso “Gestão da biblioteca de infraestrutura de TI”, concluído em 10/09/2026.
+- Separados visualmente os oito itens da navegação móvel em botões individuais.
+- Adicionado fundo translúcido de 60% com efeito de vidro à navegação móvel enquanto flutuante.
+- Mantido o controle de tema fixo no canto inferior durante a exibição da navegação móvel flutuante.
+- Excluído o controle de tema do fade da navegação móvel flutuante para evitar piscadas durante sua entrada.
+- Adicionado no desktop um destaque por hover nos itens de navegação, com zoom discreto e texto azul.
+- Aplicado o mesmo zoom por hover ao controle de tema no desktop.
+- Adicionado contorno azul de 2 px ao controle de tema no mobile para melhorar sua visibilidade.
+- Substituído o vidro translúcido da navegação móvel flutuante por fundo sólido e adicionados contornos azuis de 2 px aos seus botões.
+- Removido o fundo do contêiner da navegação móvel flutuante, mantendo vazados os espaços entre os botões contornados.
+- Corrigida a especificidade do contorno azul de 2 px nos botões da navegação móvel.
+- Ocultado temporariamente o controle de tema durante a animação inicial móvel para impedir sua sobreposição à navegação.
+- Removida a sombra da navegação móvel flutuante para preservar o aspecto vazado entre seus botões.
+- Restaurado no mobile o fundo azul suave para indicar a aba de navegação ativa.
+- Restauradas no mobile as setas dos links de WhatsApp e e-mail, alinhadas à direita dos respectivos cartões.
+- Adicionado destaque azul por hover aos links de Currículo e Contato no cartão de perfil desktop.
 
 ## 2026-09-10
 

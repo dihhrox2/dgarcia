@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <title>Currículo | Diego Garcia</title>
+    <style>
+      :root { color-scheme: dark; }
+      * { box-sizing: border-box; }
+      html, body { height: 100%; margin: 0; }
+      body { background: #111216; color: #f4f6fb; font-family: Inter, Arial, sans-serif; }
+      .resume-viewer { display: grid; grid-template-rows: auto minmax(0, 1fr); height: 100%; }
+      .resume-viewer__header { align-items: center; background: #181a20; border-bottom: 1px solid #2d3340; display: flex; justify-content: space-between; min-height: 52px; padding: 12px 18px; }
+      .resume-viewer__title { font-size: 1rem; font-weight: 700; }
+      .resume-viewer__frame { background: #fff; border: 0; height: 100%; width: 100%; }
+      .resume-viewer__fallback { align-self: center; display: none; grid-column: 1; grid-row: 2; justify-self: center; max-width: 36rem; padding: 24px; text-align: center; }
+      .resume-viewer__fallback.is-visible { display: block; }
+      .resume-viewer__fallback a { color: #79a2ff; }
+    </style>
+  </head>
+  <body>
+    <main class="resume-viewer">
+      <header class="resume-viewer__header">
+        <span class="resume-viewer__title">Currículo de Diego Garcia</span>
+      </header>
+      <iframe id="resume-viewer" class="resume-viewer__frame" title="Currículo de Diego Garcia"></iframe>
+      <p id="resume-fallback" class="resume-viewer__fallback" role="alert">
+        Seu navegador não conseguiu abrir o leitor de PDF.
+        <a href="assets/Diego-Garcia-Analista-TI-Curriculo.pdf" download>Baixar o currículo em PDF</a>
+      </p>
+    </main>
+    <script>
+      (() => {
+        const pdfPath = 'assets/Diego-Garcia-Analista-TI-Curriculo.pdf';
+        const viewer = document.getElementById('resume-viewer');
+        const fallback = document.getElementById('resume-fallback');
+        let pdfUrl;
+
+        fetch(pdfPath)
+          .then((response) => {
+            if (!response.ok) throw new Error('PDF indisponível');
+            return response.arrayBuffer();
+          })
+          .then((buffer) => {
+            pdfUrl = URL.createObjectURL(new Blob([buffer], { type: 'application/pdf' }));
+            viewer.src = pdfUrl;
+          })
+          .catch(() => {
+            viewer.remove();
+            fallback.classList.add('is-visible');
+          });
+
+        window.addEventListener('pagehide', () => {
+          if (pdfUrl) URL.revokeObjectURL(pdfUrl);
+        }, { once: true });
+      })();
+    </script>
+  </body>
+</html>

@@ -31,6 +31,19 @@
     min-height: 100svh;
   }
 
+  @media (hover: hover) and (prefers-reduced-motion: no-preference) {
+    .nav-tab,
+    .side-rail .theme-toggle {
+      transition: color 160ms ease, transform 160ms ease;
+    }
+
+    .nav-tab:hover,
+    .side-rail .theme-toggle:hover {
+      color: var(--blue);
+      transform: scale(1.05);
+    }
+  }
+
   .app-shell {
     left: 50%;
     margin: 0;
@@ -66,12 +79,15 @@
   }
 
   .side-rail {
+    background: transparent;
+    border-radius: 0;
     display: grid;
     flex: none;
     gap: 7px;
     grid-template-columns: repeat(4, minmax(0, 1fr));
     max-width: 100%;
     overflow: visible;
+    padding: 0;
     width: 100%;
   }
 
@@ -82,7 +98,8 @@
   }
 
   .side-rail.is-mobile-floating {
-    box-shadow: var(--shadow);
+    background: transparent;
+    border-radius: 0;
     left: var(--mobile-nav-left);
     max-width: 720px;
     position: fixed;
@@ -92,13 +109,20 @@
     z-index: 30;
   }
 
-  .nav-tab {
+  .side-rail .nav-tab {
+    background: var(--panel);
+    border: 2px solid var(--blue);
+    border-radius: 12px;
     justify-content: center;
     min-width: 0;
     padding: 0 6px;
     text-align: center;
     white-space: nowrap;
     width: 100%;
+  }
+
+  .side-rail .nav-tab.active {
+    background: color-mix(in srgb, var(--blue) 15%, var(--panel));
   }
 
   .profile-card,
@@ -152,7 +176,7 @@
 
 @media (prefers-reduced-motion: no-preference) {
   @media (max-width: 900px) {
-    .side-rail.is-mobile-floating {
+    .side-rail.is-mobile-floating .nav-tab {
       animation: mobile-nav-enter 160ms ease-out;
     }
   }

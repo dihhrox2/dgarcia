@@ -12,12 +12,11 @@ Portfólio pessoal de Diego Garcia, profissional de tecnologia com atuação em 
 - Acordeões acessíveis para experiências, habilidades, serviços e cursos; timeline cronológica de formação.
 - Animações de entrada e fade-in respeitando a preferência por redução de movimento.
 - Navegação móvel em duas linhas, flutuante ao rolar para cima e suspensa em rolagens automáticas.
-- Cases, serviços, WhatsApp e e-mail publicados; currículo mantido desabilitado.
+- Cases, serviços, WhatsApp, e-mail e currículo em PDF publicados.
 
 ## Pendências reais
 
 - Configuração e validação de publicação pública, domínio e analytics.
-- Currículo seguro para download, sem endereço físico.
 - Validação final dos contatos antes de qualquer publicação externa.
 
 ## Fora de escopo atual

@@ -113,6 +113,12 @@ html[data-theme="light"] {
   background: var(--panel);
 }
 
+@media (min-width: 901px) and (hover: hover) {
+  .profile-actions a:hover {
+    color: var(--blue);
+  }
+}
+
 #about .about-summary > .summary-list {
   border-left: 0;
   border-top: 0;

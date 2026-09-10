@@ -19,12 +19,13 @@
 | Serviços | Três categorias expansíveis: TI, criação de conteúdo e soluções web, com itens, valores públicos e observações de cobrança. |
 | Informações adicionais | Operação de TI corporativa, escotismo, habilitação amadora e experiência complementar. |
 | Contato | WhatsApp com mensagem inicial, e-mail e cidade publicados. |
+| Currículo | PDF autorizado publicado, aberto em página visualizadora local em nova aba. |
 
 ## Conteúdo aprovado relevante
 
 Na apresentação, o texto rotativo destaca suporte técnico, infraestrutura e redes, operação administrativa, atendimento, gestão de serviços de TI, criação de conteúdo e soluções web. A descrição principal posiciona essas frentes como apoio à rotina, da sustentação técnica à criação de conteúdo e ao desenvolvimento web. O portfólio apresenta competências de suporte técnico, infraestrutura e redes, operação administrativa, atendimento, gestão de serviços de TI e IA aplicada. As habilidades incluem atendimento e incidentes, sistemas e endpoints, identidade e acessos, aplicativos corporativos, redes, ativos, documentação, criação audiovisual, design, LLMs, programação com IA e conteúdo para redes sociais.
 
-WhatsApp e e-mail são links públicos autorizados. O currículo original não é disponibilizado para download porque contém endereço físico.
+WhatsApp e e-mail são links públicos autorizados. O currículo em PDF fornecido foi autorizado para publicação sem alterações e é aberto em uma página visualizadora local, em nova aba.
 
 O case Essentia Health apresenta um site institucional de seis páginas: a página da marca, três páginas do NeuroFlash e duas do Obsidian. O conteúdo aprovado informa 20 dias estimados de produção, investimento total de R$ 1.500 e criação integral dos criativos por Diego Garcia.
 
