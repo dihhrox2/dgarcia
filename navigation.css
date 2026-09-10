@@ -6,6 +6,12 @@
   width: max-content;
 }
 
+.nav-tabs {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
 .mobile-nav-placeholder {
   display: none;
 }
@@ -89,6 +95,13 @@
     overflow: visible;
     padding: 0;
     width: 100%;
+  }
+
+  .side-rail .nav-tabs {
+    display: grid;
+    gap: 7px;
+    grid-column: 1 / -1;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   .mobile-nav-placeholder { order: 0; }

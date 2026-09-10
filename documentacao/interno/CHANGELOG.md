@@ -1,9 +1,25 @@
 # Changelog
 
+## 10/09/2026 — entrega final
+
+- Versão de entrega finalizada; manutenção evolutiva para novas informações curriculares.
+- Centralizados abas, hashes, histórico e ARIA em `script.js`; `motion.js` recebe eventos e cuida somente dos efeitos. Contato usa o mesmo fluxo, preservando aliases, reload em Sobre e teclado; hashes malformados não interrompem o site.
+- Criado `accordions.js` para os quatro grupos e removidos `experience-accordion.js`, `skills-accordion.js`, `education-accordion.js` e o controlador duplicado de Serviços. Cópias anteriores estão no backup temporário da auditoria.
+- Protegido o tema contra bloqueio de armazenamento; cor do canvas calculada na inicialização e na troca de tema, não a cada quadro. Preservadas a animação sob redução de movimento e a pausa quando a página fica oculta.
+- Limpados temporizadores de transição, formatados os arquivos compactados e removidos apenas estilos sem uso comprovado. Preservadas cascata e regras responsivas; atualizadas versões de HTML/CSS/scripts alterados.
+- Oitenta comparações visuais sem diferenças nas áreas estáveis e sem mudanças nas métricas capturadas. Testes funcionais de navegação, acordeões, temas, fonte, currículo, carrossel e movimento aprovados; assets e documento 08 íntegros por SHA-256.
+- Lighthouse local: mobile 74/96/77/100 e desktop 98/96/77/100 (performance/acessibilidade/boas práticas/SEO); CLS 0 nos dois. Alertas de contraste preservados, interferência de antivírus, favicon não aprovado e limitações do ambiente documentados no documento 06. Não se presume desempenho de produção a partir destas notas.
+- Atualizados README e documentos 01, 02, 03, 06 e 07; nenhuma copy pública, asset ou configuração externa alterada.
+
+## Histórico anterior
+
+- Corrigida a semântica ARIA da navegação por abas, do link de Contato e do texto rotativo do perfil sem alteração visual.
+- Hospedada localmente a fonte Caveat em WOFF2, removendo as chamadas ao Google Fonts e preservando pesos, cobertura de caracteres e fallback.
+- Documentada a preservação consciente do contraste atual dos rótulos azuis por requisito visual.
+- Mantida a animação do canvas de fundo ativa mesmo com redução de movimento do sistema, por ser parte essencial da identidade visual do site.
 - Preparada a base técnica de SEO para `https://dgarcia.com.br/`: canônica absoluta, `robots.txt`, sitemap da homepage e do PDF original e JSON-LD de `WebSite` e `Person` com fatos públicos.
 - Movidos os dois cases publicados para o HTML estático, preservando integralmente seus textos e links; o script não é mais necessário para sua descoberta.
 - Priorizado o retrato em WebP com fallback e dimensões reservadas; mantidos os PNGs originais com transparência no carrossel, com carregamento sob demanda dos itens não exibidos.
-- Desativado o canvas de fundo quando há preferência por redução de movimento.
 - Registradas como pendências externas a configuração de HTTPS, redirecionamento de `www`, MIME/cache do provedor e verificação no Google Search Console; não foram adicionados analytics, pixels ou cookies.
 - Recriado o contorno do perfil com uma borda externa de 1 px no agrupamento e uma divisória de 1 px na identificação; removida a camada sobreposta anterior.
 - Aumentados para 2 px o contorno externo e a divisória do perfil para melhorar a estabilidade visual em diferentes painéis e larguras.

@@ -1,8 +1,10 @@
 # Portfólio Diego Garcia
 
-Site estático local de marca pessoal de Diego Garcia, desenvolvido com HTML, CSS e JavaScript puro.
+Site estático de marca pessoal de Diego Garcia, desenvolvido com HTML, CSS e JavaScript puro.
 
 ## Estado atual
+
+**Versão de entrega finalizada; manutenção evolutiva para novas informações curriculares.** Validação local concluída em 10/09/2026, com evidências e limites registrados no documento de QA. Novas experiências, cursos, certificações e cases poderão ser incorporados mediante aprovação de conteúdo.
 
 - Página única com oito abas: Sobre, Experiência, Formação, Habilidades, Projetos, Serviços, Informações adicionais e Contato.
 - Navegação por hash, histórico do navegador, foco por teclado e tema claro/escuro persistente.
@@ -22,8 +24,8 @@ Abra `index.html` por um servidor HTTP local. Não há dependências, etapa de b
 - `index.html`: conteúdo, semântica e abas da página.
 - `styles.css`: base visual do layout.
 - CSS especializado para navegação, perfil, experiência, formação, habilidades, serviços, tema, acessibilidade, superfícies, animações, carrossel e barra de rolagem.
-- Scripts para abas, tema, fundo visual, acordeões, carrossel, animações e navegação móvel.
-- `assets/`: fontes originais e variantes WebP responsivas do retrato e dos logos, logos dos cases e currículo em PDF publicado.
+- `script.js`: controlador único de abas, hashes e ARIA, tema, carrossel, digitação e canvas; `motion.js`: efeitos; `accordions.js`: estado compartilhado dos quatro grupos expansíveis; `mobile-navigation.js`: navegação flutuante.
+- `assets/`: PNGs transparentes originais dos logos, retrato original e variante WebP, fonte Caveat local, logos dos cases e currículo em PDF preservado.
 - `robots.txt` e `sitemap.xml`: instruções públicas de rastreamento e descoberta para `dgarcia.com.br`.
 
 ## Documentação interna
@@ -38,4 +40,6 @@ Abra `index.html` por um servidor HTTP local. Não há dependências, etapa de b
 - [Matriz de evidências Sabesp](documentacao/interno/08-matriz-evidencias-sabesp.md)
 - [Changelog](documentacao/interno/CHANGELOG.md)
 
-O repositório confirma somente o funcionamento local. A configuração de domínio, HTTPS, redirecionamento de `www`, cabeçalhos HTTP e Google Search Console ainda exige acesso ao provedor e à conta; analytics, pixels e cookies não foram adicionados.
+Esta entrega confirma o funcionamento local; não certifica uma nova publicação em produção. Domínio, HTTPS, redirecionamento de `www`, cabeçalhos HTTP e Google Search Console não foram modificados nem verificados nesta rodada. Analytics, pixels e cookies não foram adicionados.
+
+Preservar em futuras refatorações: canvas animado mesmo sob redução de movimento (com pausa quando a página está oculta), qualidade e transparência dos PNGs, contraste aprovado e aprovação prévia para qualquer nova copy.

@@ -103,9 +103,6 @@ html[data-theme="light"] {
   margin: 14px;
 }
 
-.profile-links {
-  background: var(--panel);
-}
 
 .profile-actions,
 .profile-actions button,

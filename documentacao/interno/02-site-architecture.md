@@ -14,10 +14,10 @@
 
 `main.app-shell` organiza navegação, cartão de perfil e painel de conteúdo. Em desktop, a composição usa três colunas; até 900 px passa a uma coluna.
 
-- Navegação: oito abas, hashes diretos, histórico e teclado.
-- Perfil: retrato WebP priorizado com fallback, cartão conectado, atuação rotativa, cidade, carrossel de dez logos WebP carregados sob demanda, link para página visualizadora local do currículo em PDF em nova aba e atalho para Contato.
-- Conteúdo: uma aba visível por vez, retorno ao topo do painel e fade-in de 0,3 s nas trocas e conteúdos expansíveis quando permitido pelo sistema.
-- Tema: alternância claro/escuro persistida em `localStorage`.
+- Navegação: oito abas com padrão ARIA de tablist/tab/tabpanel, hashes diretos, histórico e teclado.
+- Perfil: retrato WebP priorizado com fallback, cartão conectado, atuação rotativa, cidade, carrossel de dez PNGs originais transparentes carregados sob demanda, link para página visualizadora local do currículo em PDF em nova aba e atalho para Contato.
+- Conteúdo: uma aba visível por vez, retorno ao topo do painel, entrada inicial de 500 ms, painel de 100 ms seguido dos itens simultâneos de 200 ms; expansíveis de 300 ms. A redução de movimento é respeitada nesses efeitos.
+- Tema: alternância claro/escuro persistida em `localStorage` quando permitido; falhas de armazenamento não impedem a troca durante a sessão.
 - Mobile: perfil permanente apenas em Sobre; em links diretos para outras abas ele aparece temporariamente como origem da animação inicial. O menu flutuante preserva a largura do menu em fluxo e fica oculto durante rolagens automáticas.
 
 ## Abas e interações
@@ -41,6 +41,11 @@ Os controles expansíveis usam botões, `aria-expanded`, `aria-controls`, regiõ
 - `robots.txt` e `sitemap.xml`: descoberta pública da homepage canônica e do PDF do currículo.
 - `styles.css`: base visual.
 - CSS especializado: `navigation.css`, `about.css`, `experience.css`, `education.css`, `skills.css`, `services.css`, `theme.css`, `accessibility.css`, `semantic-surfaces.css`, `logo-carousel.css`, `motion.css`, `scrollbar.css` e `background-network.css`.
-- Scripts: `script.js`, `motion.js`, `mobile-navigation.js`, `experience-accordion.js`, `skills-accordion.js` e `education-accordion.js`.
+- `script.js`: único controlador de seleção, hashes, histórico e ARIA; também mantém tema, digitação, carrossel e canvas. Menu e atalho Contato convergem para o mesmo fluxo. Hash malformado não interrompe a página; aliases permanecem; reload seleciona Sobre.
+- `motion.js`: apresentação, temporizadores e rolagem dos efeitos, sem mapas de hashes ou atualização de histórico. Recebe `portfolio:tab-change` e expõe `PortfolioMotion` para os expansíveis.
+- `accordions.js`: implementação compartilhada do estado dos quatro grupos, com exclusividade dentro de cada grupo e efeitos delegados a `motion.js`.
+- `mobile-navigation.js`: posição e visibilidade do menu móvel, preservando os bloqueios de rolagem automática e entrada inicial.
 
-O cabeçalho de `index.html` declara a canônica `https://dgarcia.com.br/`, rastreamento público e JSON-LD de `WebSite` e `Person`, usando apenas fatos já públicos. `curriculo.html` continua `noindex`; o PDF original é descoberto pelo sitemap. Não há API, backend, CMS, formulário, analytics ou integração externa.
+O canvas armazena a cor azul e a atualiza no evento `portfolio:theme-change`, sem consultar estilos a cada quadro. Continua animado sob redução de movimento e mantém a pausa existente quando o documento está oculto. Trocas rápidas de aba e mudanças da preferência de movimento limpam temporizadores de transição.
+
+O cabeçalho de `index.html` declara a canônica `https://dgarcia.com.br/`, rastreamento público e JSON-LD de `WebSite` e `Person`, usando apenas fatos já públicos. A fonte Caveat é servida localmente por `fonts.css` e `assets/fonts/`. `curriculo.html` continua `noindex`; o PDF original é descoberto pelo sitemap. Não há API, backend, CMS, formulário, analytics ou integração externa.
