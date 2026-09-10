@@ -2,32 +2,24 @@
 
 ## Concluído
 
-| Item | Data | Responsável |
-| --- | --- | --- |
-| Documentação-base criada | 2026-09-07 | Diego Garcia |
-| Revisão documental com currículo e referência visual | 2026-09-07 | Diego Garcia |
-| Primeira implementação estática criada | 2026-09-07 | Diego Garcia |
-| Currículo integrado ao painel e vitrine de projetos estruturada | 2026-09-07 | Diego Garcia |
-| Vínculos profissionais e períodos confirmados no currículo | 2026-09-07 | Diego Garcia |
+- Implementação estática local e painel de oito abas com hashes diretos.
+- Retrato profissional autorizado, cartão de identificação integrado, carrossel de logos e contornos azuis.
+- Conteúdo profissional, formação cronológica, habilidades, informações adicionais e contatos publicados.
+- Cases RPE6 Strength Academy e Essentia Health, além de serviços com valores públicos.
+- Tema persistente, responsividade móvel, animações, navegação flutuante e bloqueios para rolagens automáticas.
+- Acordeões acessíveis para experiências, habilidades, serviços e cursos.
 
 ## Próximas etapas
 
-| Prioridade | Item | Contexto | Responsável |
-| --- | --- | --- | --- |
-| Alta | Aprovar bio e posicionamento | Necessários para o hero e a apresentação | Diego Garcia |
-| Alta | Fornecer foto profissional autorizada | Necessária para o hero; registrar origem e uso | Diego Garcia |
-| Alta | Definir competências e habilidades | Necessárias para cartões de competências e seção de habilidades | Diego Garcia |
-| Alta | Selecionar trajetória e formação | Curar informações do currículo para publicação | Diego Garcia |
-| Alta | Fornecer projetos pessoais | Cada item exige título, contexto, contribuição, tecnologias, resultado, imagem e link opcional | Diego Garcia |
-| Alta | Definir canal e destino do contato | Necessário para implementar e testar o CTA | Diego Garcia |
-| Alta | Definir identidade visual final | Direção escura com azul confirmada; faltam paleta, tipografia e assinatura | Diego Garcia |
-| Alta | Reunir assets autorizados | Exigir origem e licença/autorização antes do uso | Diego Garcia |
-| Média | Definir domínio próprio | GitHub Pages é a publicação prevista; domínio final está pendente | Diego Garcia |
-| Média | Definir cronograma de desenvolvimento e lançamento | Projeto permanece não iniciado | Diego Garcia |
-| Baixa | Avaliar métricas | Requer decisão de ferramenta e privacidade | Diego Garcia |
-| Baixa | Curar certificações e conquistas | Avaliar a certificação Microsoft e demais itens antes de publicar | Diego Garcia |
-| Baixa | Avaliar redes profissionais e currículo para download | Não criar links ou arquivos provisórios | Diego Garcia |
+| Prioridade | Item | Contexto |
+| --- | --- | --- |
+| Alta | Definir publicação | Configurar hospedagem, origem de deploy e URL pública. |
+| Alta | Disponibilizar currículo seguro | Criar versão sem endereço físico antes de habilitar o botão. |
+| Média | Validar contatos | Confirmar WhatsApp e e-mail antes da publicação externa. |
+| Média | Revisar SEO de produção | Definir canônica e metadados após a URL final. |
+| Baixa | Avaliar métricas | Requer decisão de ferramenta, privacidade e consentimento. |
+| Baixa | Avaliar domínio próprio | Depende da estratégia de hospedagem. |
 
-## Bloqueios
+## Sem bloqueio técnico
 
-Não há bloqueio técnico nesta fase. A implementação futura depende principalmente da bio, foto, projetos pessoais, identidade visual e contato listados como prioridade alta.
+O site pode ser executado localmente. A evolução depende de decisões de publicação, currículo seguro e validações anteriores à divulgação externa.

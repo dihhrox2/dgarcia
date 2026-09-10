@@ -25,3 +25,7 @@ Este registro interno orienta a curadoria de competências para o portfólio. El
 ## Regra de curadoria
 
 Uma ocorrência em comunicação interna não prova, por si só, uma execução individual. A página só usa temas recorrentes compatíveis com o histórico profissional já publicado. Qualquer ferramenta, fluxo, número, projeto ou resultado novo requer confirmação explícita antes de ser publicado.
+
+## Uso atual no portfólio
+
+As sete competências aprovadas desta matriz estão publicadas na categoria “Tecnologia e operação” da aba Habilidades. Elas permanecem em cards descritivos, sem nomes, protocolos, volumes, topologia, ativos, licenças, documentos ou procedimentos internos.

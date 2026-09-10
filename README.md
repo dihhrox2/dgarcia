@@ -1,25 +1,28 @@
 # Portfólio Diego Garcia
 
-Base documental para o futuro site portfólio de Diego Garcia. Este repositório ainda não contém implementação, assets nem configuração de publicação.
+Site estático local de marca pessoal de Diego Garcia, desenvolvido com HTML, CSS e JavaScript puro.
 
 ## Estado atual
 
-- Status: primeira implementação estática concluída.
-- Entrega atual: página única com conteúdo profissional selecionado, monograma provisório e documentação interna.
-- Próxima etapa: substituir o monograma por foto autorizada, incluir projetos pessoais e definir canal público de contato.
+- Página única com oito abas: Sobre, Experiência, Formação, Habilidades, Projetos, Serviços, Informações adicionais e Contato.
+- Navegação por hash, histórico do navegador, foco por teclado e tema claro/escuro persistente.
+- Perfil com retrato autorizado, cartão integrado com contornos azuis, carrossel de dez logos em ordem aleatória e troca automática por fade.
+- Acordeões acessíveis para experiências, habilidades, serviços e cursos; timeline cronológica de formação com marcadores anuais.
+- Navegação móvel responsiva, com entrada inicial animada, reaparição flutuante ao rolar para cima e bloqueio durante alinhamentos automáticos.
+- Cases publicados de RPE6 Strength Academy e Essentia Health; serviços de TI, criação de conteúdo e soluções web com valores públicos.
+- WhatsApp, e-mail e cidade publicados. O currículo segue desabilitado porque o arquivo original contém endereço físico.
 
-## Como executar e testar
+## Como executar
 
-Abrir `index.html` por um servidor HTTP local. A página não possui dependências ou etapa de build.
+Abra `index.html` por um servidor HTTP local. Não há dependências, etapa de build, backend ou configuração de publicação no repositório.
 
-## Estrutura prevista
+## Estrutura técnica
 
-- Futuro site: página única estática, com apresentação, competências, trajetória, formação, habilidades, projetos e contato.
-- Direção de interface: inspiração estrutural próxima ao portfólio de Paulo Drefahl, sem reutilização de código, textos, marca ou assets.
-- Base técnica definida: HTML, CSS e JavaScript puro.
-- Publicação prevista: GitHub Pages.
-- Manutenção futura: edição manual de arquivos versionados no repositório.
-- Arquivos da implementação: `index.html`, `styles.css` e `script.js`.
+- `index.html`: conteúdo, semântica e abas da página.
+- `styles.css`: base visual do layout.
+- CSS especializado para navegação, perfil, experiência, formação, habilidades, serviços, tema, acessibilidade, superfícies, animações, carrossel e barra de rolagem.
+- Scripts para abas, tema, fundo visual, acordeões, carrossel, animações e navegação móvel.
+- `assets/`: retrato, logos do carrossel e logos dos cases.
 
 ## Documentação interna
 
@@ -33,4 +36,4 @@ Abrir `index.html` por um servidor HTTP local. A página não possui dependênci
 - [Matriz de evidências Sabesp](documentacao/interno/08-matriz-evidencias-sabesp.md)
 - [Changelog](documentacao/interno/CHANGELOG.md)
 
-As informações desta base foram confirmadas por Diego Garcia quando não eram verificáveis no repositório. Itens pendentes não devem ser tratados como conteúdo aprovado.
+O repositório confirma somente o funcionamento local. Publicação, domínio, analytics e integrações externas não estão configurados ou confirmados.

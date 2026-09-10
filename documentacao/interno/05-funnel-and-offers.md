@@ -1,30 +1,23 @@
 # Funil e ofertas
 
-## Jornada prevista
+## Jornada atual
 
-1. O visitante chega à página única por um link direto, busca ou referência.
-2. Entende o posicionamento, competências e trajetória de Diego.
-3. Explora habilidades, projetos pessoais e certificações/conquistas quando seus itens forem aprovados.
-4. Encontra o CTA de contato.
-5. Segue para o canal externo definido por Diego Garcia.
+1. A pessoa acessa a aba Sobre ou qualquer aba diretamente por hash.
+2. Explora apresentação, competências, trajetória, formação, habilidades, projetos e serviços.
+3. Pode iniciar conversa por WhatsApp ou enviar e-mail na aba Contato; o cartão de perfil também direciona para essa aba.
 
 ## Conversão
 
-| Elemento | Estado |
+| Elemento | Estado atual |
 | --- | --- |
-| Objetivo de conversão | Iniciar contato |
-| CTA principal | Confirmado como “entrar em contato”; texto final pendente |
-| Destino do CTA | Pendente; não criar link antes da definição |
-| Captação no site | Não se aplica: sem formulário ou coleta de dados |
+| Objetivo | Iniciar contato direto |
+| WhatsApp | Link ativo para conversa com a mensagem “Olá eu vi seu site!” |
+| E-mail | Link ativo `mailto:` |
+| Formulário | Não implementado |
+| Currículo | Botão desabilitado |
 
-## Conteúdo de prova
+## Projetos e serviços
 
-Projetos pessoais são a prova de trabalho prevista para o funil. Cada card somente poderá ser publicado quando incluir título, contexto, contribuição de Diego, tecnologias, resultado aprovado, imagem autorizada e, se aplicável, link externo aprovado.
+Projetos apresentam os cases publicados RPE6 Strength Academy e Essentia Health, com links para os respectivos sites. Serviços aparecem em três acordeões — TI, Criação e conteúdo e Soluções web — com itens, valores e observações de cobrança publicados. Não há checkout, proposta, pagamento, CRM, automação ou rastreamento de conversão.
 
-Certificações e conquistas reforçam a trajetória, mas permanecem sem itens públicos até curadoria e aprovação. A certificação Microsoft registrada no currículo é uma possível candidata, não uma publicação autorizada.
-
-## Ofertas e integrações comerciais
-
-Não se aplicam nesta fase. Serviços, produtos, preços, propostas comerciais, pagamento, CRM, automações e rastreamento de conversão não foram definidos e não devem ser presumidos.
-
-Qualquer mudança que inclua coleta, vendas ou integrações deve atualizar este documento, o brief e as orientações de privacidade em [SEO, lançamento e QA](06-seo-launch-and-qa.md).
+Qualquer mudança comercial deve ser aprovada e atualizar este documento, o brief e o checklist de lançamento.

@@ -83,11 +83,12 @@
 
   .side-rail.is-mobile-floating {
     box-shadow: var(--shadow);
-    left: 1rem;
+    left: var(--mobile-nav-left);
     max-width: 720px;
     position: fixed;
     top: max(12px, env(safe-area-inset-top));
-    width: calc(100vw - 2rem);
+    transform: none;
+    width: var(--mobile-nav-width);
     z-index: 30;
   }
 

@@ -1,46 +1,45 @@
 # Arquitetura do site
 
-## Decisões técnicas confirmadas
+## Base técnica
 
-| Tema | Decisão |
+| Tema | Estado atual |
 | --- | --- |
-| Tipo de site | Estático, página única |
-| Base técnica | HTML, CSS e JavaScript puro |
-| Publicação prevista | GitHub Pages |
-| Atualização futura | Edição manual de arquivos versionados no repositório |
+| Tipo | Site estático de página única com abas internas |
+| Tecnologias | HTML, CSS e JavaScript puro |
+| Execução | Servidor HTTP local |
+| Publicação | Não configurada no repositório |
+| Dados | Conteúdo mantido diretamente nos arquivos estáticos |
 
-## Estrutura futura
+## Estrutura e comportamento
 
-A página única deverá usar navegação por âncoras e seguir a hierarquia abaixo, inspirada de perto na referência indicada pelo usuário, mas construída com identidade própria:
+`main.app-shell` organiza navegação, cartão de perfil e painel de conteúdo. Em desktop, a composição usa três colunas; até 900 px passa a uma coluna.
 
-1. Hero: foto profissional, nome, posicionamento em tecnologia ampla, redes/links somente quando aprovados e CTA de contato.
-2. Apresentação: bio curta e resumo de competências.
-3. Competências: cartões horizontais navegáveis para frentes de atuação.
-4. Trajetória e formação: blocos expansíveis, com itens selecionados do currículo e textos aprovados.
-5. Habilidades: categorias e tecnologias/ferramentas aprovadas.
-6. Projetos pessoais: cartões horizontais; nenhum item será publicado antes do fornecimento dos dados exigidos.
-7. Certificações e conquistas: seção prevista, inicialmente sem itens públicos.
-8. Contato: CTA sem URL, e-mail, telefone ou formulário até definição posterior.
+- Navegação: oito abas, hashes diretos, histórico e teclado.
+- Perfil: retrato, cartão conectado, atuação rotativa, cidade, carrossel de dez logos, currículo desabilitado e atalho para Contato.
+- Conteúdo: uma aba visível por vez, retorno ao topo do painel e fade-in de 0,3 s nas trocas e conteúdos expansíveis quando permitido pelo sistema.
+- Tema: alternância claro/escuro persistida em `localStorage`.
+- Mobile: perfil permanente apenas em Sobre; em links diretos para outras abas ele aparece temporariamente como origem da animação inicial. O menu flutuante preserva a largura do menu em fluxo e fica oculto durante rolagens automáticas.
 
-Os cartões horizontais devem oferecer alternativa acessível à rolagem por toque. Os blocos expansíveis e a alternância de tema precisam manter navegação por teclado, foco visível e estado compreensível por leitores de tela.
+## Abas e interações
 
-## Componentes e dados
+| Aba | Conteúdo e estado |
+| --- | --- |
+| Sobre | Apresentação, informações pessoais e seis competências centrais. |
+| Experiência | Sete registros em acordeões exclusivos, todos fechados inicialmente. |
+| Formação | Três registros acadêmicos e timeline cronológica em acordeão fechado. |
+| Habilidades | Dois grupos exclusivos, fechados inicialmente; a abertura pode alinhar o viewport no mobile. |
+| Projetos | Cases publicados RPE6 Strength Academy e Essentia Health, gerados pelo script. |
+| Serviços | Três acordeões exclusivos com itens, valores e observações publicados. |
+| Informações adicionais | Quatro itens descritivos. |
+| Contato | WhatsApp, e-mail e cidade; canais ativos onde aplicável. |
 
-A implementação estática usa `index.html` para conteúdo e estrutura, `styles.css` para tema e responsividade e `script.js` para alternância de tema, rolagem dos cartões e ano do rodapé. Não há API, backend ou modelo de dados.
+Os controles expansíveis usam botões, `aria-expanded`, `aria-controls`, regiões vinculadas e conteúdo oculto fora da navegação por teclado. O carrossel expõe somente o logo visível à leitura assistiva.
 
-O conteúdo futuro será mantido diretamente em arquivos do site até que uma mudança de escopo aprove outra solução. Para cada projeto pessoal, a fonte de conteúdo deverá conter: título, contexto, contribuição de Diego, tecnologias, resultado aprovado, imagem autorizada e link opcional.
+## Arquivos
 
-## Integrações
+- `index.html`: estrutura, conteúdo e semântica.
+- `styles.css`: base visual.
+- CSS especializado: `navigation.css`, `about.css`, `experience.css`, `education.css`, `skills.css`, `services.css`, `theme.css`, `accessibility.css`, `semantic-surfaces.css`, `logo-carousel.css`, `motion.css`, `scrollbar.css` e `background-network.css`.
+- Scripts: `script.js`, `motion.js`, `mobile-navigation.js`, `experience-accordion.js`, `skills-accordion.js` e `education-accordion.js`.
 
-- Canal de contato: pendente; não incluir URL, e-mail, telefone ou mensageria antes de fornecimento e aprovação.
-- Formulários, CRM e automações: não se aplicam na primeira versão, pois não haverá coleta no site.
-- Analytics: não se aplica inicialmente; não há ferramenta definida.
-- Redes profissionais e currículo para download: pendentes; não criar destinos ou arquivos provisórios.
-
-## Ambientes e publicação
-
-- Desenvolvimento: ambiente local a ser definido na implementação.
-- Produção: GitHub Pages.
-- Domínio próprio e hospedagem complementar: pendentes; GitHub Pages não autoriza presumir domínio final.
-
-Antes do primeiro deploy, definir repositório de publicação, ramo/origem de deploy e domínio, se houver. Veja o checklist em [SEO, lançamento e QA](06-seo-launch-and-qa.md).
+Não há API, backend, CMS, formulário, analytics ou integração externa.

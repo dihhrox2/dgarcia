@@ -1,45 +1,29 @@
 # Brief do projeto
 
-## Visão
+## Visão e público
 
-Criar um site portfólio de marca pessoal para Diego Garcia, profissional de tecnologia com atuação ampla. O site deverá apresentar sua trajetória, competências e projetos pessoais de forma clara, profissional e próxima.
+Portfólio pessoal de Diego Garcia, profissional de tecnologia com atuação em suporte, infraestrutura, operação, administração, atendimento, criação e IA aplicada. O público é formado por potenciais clientes, parceiros e recrutadores.
 
-## Público
+## Escopo implementado
 
-Público misto: potenciais clientes, parceiros e recrutadores.
+- Site estático local de página única, com HTML, CSS e JavaScript puro.
+- Oito abas com hashes diretos, histórico, tema persistente e foco por teclado.
+- Perfil com retrato autorizado, cartão conectado à foto por contornos azuis, atuação rotativa, cidade e carrossel automático de dez logos.
+- Acordeões acessíveis para experiências, habilidades, serviços e cursos; timeline cronológica de formação.
+- Animações de entrada e fade-in respeitando a preferência por redução de movimento.
+- Navegação móvel em duas linhas, flutuante ao rolar para cima e suspensa em rolagens automáticas.
+- Cases, serviços, WhatsApp e e-mail publicados; currículo mantido desabilitado.
 
-## Escopo confirmado
+## Pendências reais
 
-- Site estático de página única.
-- Hero com foto profissional aprovada, apresentação e CTA de contato sem destino público até nova aprovação.
-- Blocos de competências, trajetória profissional, formação, habilidades, projetos pessoais e seção futura de certificações/conquistas.
-- Interface visual inspirada de perto na referência indicada pelo usuário, com identidade própria de Diego Garcia.
-- Alternância de tema e blocos expansíveis para trajetória e formação.
-- CTA principal para entrar em contato, com destino ainda pendente.
-- Projetos pessoais previstos, sem cards publicados até o fornecimento e aprovação dos itens.
+- Configuração e validação de publicação pública, domínio e analytics.
+- Currículo seguro para download, sem endereço físico.
+- Validação final dos contatos antes de qualquer publicação externa.
 
-## Fora de escopo nesta fase
+## Fora de escopo atual
 
-- Assets finais, configuração de publicação pública e substituição dos conteúdos provisórios.
-- Área administrativa, CMS, backend, formulários e coleta de dados.
-- Métricas, analytics, campanhas ou integrações comerciais.
-- Reutilização de código, textos, imagens, marca ou outros assets do site de referência.
+Backend, CMS, formulários, CRM, pagamento, coleta de dados e integrações externas.
 
-## Responsável e status
+## Responsável
 
-| Item | Registro |
-| --- | --- |
-| Responsável por decisões e aprovações | Diego Garcia |
-| Status | Primeira implementação estática concluída localmente |
-| Critério desta fase | Página funcional e base documental organizada para evolução |
-
-## Critérios para considerar a futura primeira versão pronta
-
-1. Bio, foto profissional, projetos pessoais, conteúdo essencial, identidade visual e destino de contato aprovados.
-2. Página única implementada em HTML, CSS e JavaScript puro.
-3. Requisitos de SEO, acessibilidade e responsividade verificados conforme o checklist de [SEO, lançamento e QA](06-seo-launch-and-qa.md).
-4. Publicação no GitHub Pages validada em produção.
-
-## Decisões abertas
-
-Consulte o [backlog](07-backlog.md) para domínio, identidade final, foto, projetos, canal de contato, cronograma e demais lacunas.
+Diego Garcia é responsável pelas decisões de conteúdo, aprovações e evolução do portfólio.

@@ -1,37 +1,25 @@
 # Marca e assets
 
-## Direção confirmada
+## Direção visual implementada
 
 - Marca pessoal: Diego Garcia.
-- Direção visual: portfólio tecnológico contemporâneo, de composição próxima à referência fornecida pelo usuário.
-- Tema principal: fundo escuro, painéis grafite e acento azul.
-- Tom visual desejado: profissional, próximo e centrado em conteúdo técnico legível.
-- Interações previstas: alternância claro/escuro, cartões horizontais e blocos expansíveis.
+- Tema escuro predominante, painel grafite e acento azul reservado a estados, indicadores e contornos do perfil.
+- Tema claro disponível pelo seletor persistente.
+- O retrato e o cartão de identificação formam um bloco conectado: a foto mantém o contorno azul, o cartão usa o mesmo fundo do painel e ambos compartilham uma junção de 1 px por borda.
+- Carrossel compacto de logos com arquivos padronizados, centralizados e sem corte.
+- Assinatura visual: “O DESTINO É INEXORÁVEL”.
 
-## Identidade visual
+O site de Paulo Drefahl permanece somente como referência de atmosfera e estrutura. Não há reutilização de seus textos, código, imagens, ícones ou marca.
 
-Não finalizada. A direção de cor está definida, mas valores de paleta, tipografias, logotipo/assinatura, grid, ícones e regras de uso precisam de aprovação antes do desenvolvimento visual.
+## Inventário de retratos e logos
 
-O nome tipográfico não deve ser tratado como logotipo aprovado enquanto não houver decisão explícita.
-
-O site de Paulo Drefahl é uma referência de estrutura e atmosfera. Não reutilizar seus textos, código, imagens, ícones, marca, layout copiado em detalhe ou demais assets.
-
-## Política de assets
-
-Somente ativos autorizados podem ser incorporados ao site. Para cada ativo futuro, registrar:
-
-- arquivo e local no repositório;
-- origem, autor e licença ou autorização de uso;
-- finalidade e contexto de aplicação;
-- dimensões/variações relevantes;
-- responsável e data de aprovação, quando aplicável.
-
-## Inventário atual
-
-| Arquivo | Origem e autorização | Uso |
+| Arquivo ou grupo | Uso atual | Situação |
 | --- | --- | --- |
-| `assets/diego-garcia-profile.png` | Foto fornecida e autorizada por Diego Garcia em 08/09/2026 | Retrato no cartão de perfil. |
+| `assets/diego-garcia-profile-20260908.png` | Retrato exibido no cartão de perfil | Fornecido e autorizado por Diego Garcia em 08/09/2026 |
+| `assets/diego-garcia-profile.png` | Arquivo mantido no repositório | Não é o retrato referenciado atualmente pelo HTML |
+| Dez logos em `assets/logo-*.png` | Carrossel do perfil | Cisco, Cruzeiro do Sul, Cimcorp, Alura, Microsoft 365 Certified, Solutis, Caixa, Sabesp, Codex e Fundacc |
+| Logos dos cases | Cartões RPE6 Strength Academy e Essentia Health | Publicados com os respectivos cases |
 
-## Manutenção e substituição
+## Política de manutenção
 
-Substituir um asset somente após confirmar que o novo arquivo possui autorização de uso e que seus formatos atendem aos contextos previstos. Registrar a alteração no [changelog](CHANGELOG.md) quando ela estiver concluída.
+Todo novo asset exige origem, autorização de uso, finalidade e registro no changelog. Não há logotipo independente aprovado; o nome tipográfico é apenas texto de interface.

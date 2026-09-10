@@ -31,10 +31,6 @@
   background: #f6f6f6;
 }
 
-.profile-media::after {
-  display: none;
-}
-
 .profile-photo {
   display: block;
   height: 100%;

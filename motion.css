@@ -1,0 +1,98 @@
+.tab-panel.is-tab-entering {
+  animation: portfolio-fade-in 100ms ease both;
+}
+
+:is(.record-content, .skill-content, .education-courses-content, .service-content).is-motion-entering {
+  animation: portfolio-fade-in 300ms ease both;
+}
+
+.tab-panel .is-tab-item-pending {
+  opacity: 0;
+}
+
+.tab-panel .is-tab-item-entering {
+  animation: about-item-fade-in 200ms ease both;
+}
+
+@keyframes portfolio-fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes about-item-fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  @media (min-width: 901px) {
+    .side-rail.is-initial-entering {
+      animation: navigation-from-profile-desktop 500ms ease-out both;
+      position: relative;
+      z-index: 1;
+    }
+
+    .content-panel.is-initial-entering {
+      animation: content-from-profile-desktop 500ms ease-out both;
+      position: relative;
+      z-index: 1;
+    }
+
+    body.is-initial-profile-motion .profile-card {
+      position: relative;
+      z-index: 2;
+    }
+  }
+
+  @media (max-width: 900px) {
+    .side-rail.is-initial-entering {
+      animation: navigation-from-profile-mobile 500ms ease-out both;
+      position: relative;
+      z-index: 1;
+    }
+
+    body.is-initial-profile-motion .profile-card {
+      position: relative;
+      z-index: 2;
+    }
+
+    .app-shell {
+      position: relative;
+    }
+
+    body.is-initial-profile-stage .profile-card {
+      display: flex;
+      left: 0;
+      position: absolute;
+      top: var(--initial-profile-top);
+      width: 100%;
+      z-index: 2;
+    }
+
+    .content-panel.is-initial-entering {
+      animation: content-from-profile-mobile 500ms ease-out both;
+      position: relative;
+      z-index: 1;
+    }
+  }
+}
+
+@keyframes navigation-from-profile-desktop {
+  from { opacity: 0; transform: translateX(calc(100% + 14px)); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes navigation-from-profile-mobile {
+  from { transform: translateY(calc(100% + 14px)); }
+  to { transform: translateY(0); }
+}
+
+@keyframes content-from-profile-desktop {
+  from { opacity: 0; transform: translateX(calc(-100% - 14px)); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes content-from-profile-mobile {
+  from { transform: translateY(-80px); }
+  to { transform: translateY(0); }
+}

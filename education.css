@@ -11,13 +11,12 @@
 .education-toggle[aria-expanded="true"] .education-toggle__indicator { transform:rotate(45deg); }
 .education-toggle[aria-expanded="true"] { border-bottom-color:transparent; }
 .education-section--courses .education-section-title { padding:0; }
-.timeline-current-year { color:var(--blue); font-size:12px; font-weight:800; left:calc(50% - 32px); letter-spacing:.06em; line-height:1; position:absolute; top:67px; transform:translateX(-100%); z-index:2; }
-.timeline-current-year::before { background:var(--blue); border:4px solid var(--panel); border-radius:50%; content:''; height:13px; position:absolute; right:-42px; top:-5px; width:13px; }
 .course-timeline { list-style:none; margin:52px auto 0; max-width:760px; padding:0 22px 22px; position:relative; }
 .course-timeline::before { background:var(--line); bottom:22px; content:''; left:50%; position:absolute; top:-30px; transform:translateX(-50%); width:1px; }
 .course-timeline li { display:grid; grid-template-columns:1fr 1fr; min-height:92px; position:relative; }
 .course-timeline li::before { display:none; }
 .course-timeline li.is-year-start::before { background:var(--blue); border:4px solid var(--panel); border-radius:50%; content:''; display:block; height:13px; left:50%; position:absolute; top:21px; transform:translateX(-50%); width:13px; z-index:1; }
+.course-timeline li.is-year-end::before { display:none; }
 .course-timeline time,.course-timeline article { min-width:0; }
 .course-timeline time { align-self:start; color:var(--blue); font-size:12px; font-weight:800; letter-spacing:.06em; padding:18px 32px 0 0; text-align:right; }
 .course-timeline li:nth-child(odd) article { grid-column:2; margin:0 0 14px 32px; }
@@ -26,4 +25,42 @@
 .course-timeline h4 { font-size:14px; margin:0 0 5px; }
 .course-timeline p { color:var(--muted); font-size:13px; line-height:1.45; margin:0; }
 .course-timeline li:nth-child(even) time { grid-column:2; padding:18px 0 0 32px; text-align:left; }
-@media (max-width:560px) { .education-section-title { padding-left:18px; padding-right:18px; } .education-section--courses .education-section-title { padding:0; } .education-toggle { padding:18px; } .education-list article { gap:10px; grid-template-columns:44px minmax(0, 1fr); padding:14px 0; } .timeline-current-year { left:44px; top:65px; transform:none; } .timeline-current-year::before { display:block; left:-26px; right:auto; } .course-timeline { margin-top:52px; padding:0 18px 18px 48px; } .course-timeline::before { bottom:18px; display:block; left:24.5px; top:-30px; transform:none; } .course-timeline li,.course-timeline li:nth-child(even) { display:block; min-height:0; padding-bottom:18px; } .course-timeline li.is-year-start::before { display:block; left:-30px; top:1px; transform:none; } .course-timeline time,.course-timeline li:nth-child(even) time { display:block; margin-left:-4px; padding:0 0 7px; text-align:left; } .course-timeline article,.course-timeline li:nth-child(odd) article,.course-timeline li:nth-child(even) article { box-sizing:border-box; margin:0; text-align:left; width:100%; } }
+.course-timeline li.is-year-end { grid-template-rows:auto auto; }
+.course-timeline li.is-year-end time { position:relative; }
+.course-timeline li.is-year-end time::before { background:var(--blue); border:4px solid var(--panel); border-radius:50%; content:''; display:block; height:13px; position:absolute; top:50%; width:13px; z-index:1; }
+.course-timeline li.is-year-end:nth-child(odd) article { grid-column:2; grid-row:1; }
+.course-timeline li.is-year-end:nth-child(odd) time { grid-column:2; grid-row:2; padding:10px 0 18px 32px; text-align:left; }
+.course-timeline li.is-year-end:nth-child(odd) time::before { left:0; transform:translate(-50%,-50%); }
+.course-timeline li.is-year-end:nth-child(even) article { grid-column:1; grid-row:1; }
+.course-timeline li.is-year-end:nth-child(even) time { grid-column:1; grid-row:2; padding:10px 32px 18px 0; text-align:right; }
+.course-timeline li.is-year-end:nth-child(even) time::before { right:0; transform:translate(50%,-50%); }
+@media (max-width:560px) { .education-section-title { padding-left:18px; padding-right:18px; } .education-section--courses .education-section-title { padding:0; } .education-toggle { padding:18px; } .education-list article { gap:10px; grid-template-columns:44px minmax(0, 1fr); padding:14px 0; } .course-timeline { margin-top:52px; padding:0 18px 18px 48px; } .course-timeline::before { bottom:18px; display:block; left:24.5px; top:-30px; transform:none; } .course-timeline li,.course-timeline li:nth-child(even) { display:block; min-height:0; padding-bottom:18px; } .course-timeline li.is-year-start::before { display:block; left:-30px; top:1px; transform:none; } .course-timeline time,.course-timeline li:nth-child(even) time { display:block; margin-left:-4px; padding:0 0 7px; text-align:left; } .course-timeline article,.course-timeline li:nth-child(odd) article,.course-timeline li:nth-child(even) article { box-sizing:border-box; margin:0; text-align:left; width:100%; } }
+
+@media (max-width:560px) {
+  .course-timeline li.is-year-end {
+    display:flex;
+    flex-direction:column;
+    padding-bottom:0;
+  }
+
+  .course-timeline li.is-year-end article { order:1; }
+  .course-timeline li.is-year-end:nth-child(odd) time,
+  .course-timeline li.is-year-end:nth-child(even) time {
+    align-self:stretch;
+    grid-column:auto;
+    grid-row:auto;
+    line-height:16px;
+    margin:0;
+    order:2;
+    padding:16px 0;
+    text-align:left;
+    width:100%;
+  }
+  .course-timeline li.is-year-end:nth-child(odd) time::before,
+  .course-timeline li.is-year-end:nth-child(even) time::before {
+    left:-24px;
+    right:auto;
+    top:50%;
+    transform:translate(-50%,-50%);
+  }
+}
