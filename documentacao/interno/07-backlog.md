@@ -16,16 +16,19 @@ Versão de entrega finalizada; manutenção evolutiva para novas informações c
 - Base técnica de SEO preparada para `https://dgarcia.com.br/`: canônica, `robots.txt`, sitemap, JSON-LD e projetos estáticos.
 - Retrato priorizado em WebP com fallback e carrossel de PNGs originais transparentes carregados sob demanda; Caveat hospedada localmente.
 - Controlador único de navegação, acordeões compartilhados, proteção contra armazenamento bloqueado e cor do canvas em cache.
+- Refatoração em módulos nativos coordenados por `app.js`; dezesseis folhas CSS reunidas em `styles.css` sem alteração da cascata.
+- Suíte reprodutível com 32 testes Playwright e verificação de formatação com Prettier, somente como dependências de desenvolvimento.
+- Comparação local de 80 estados visuais e Lighthouse contra o snapshot Git `de47817`; resultados e limitações registrados no documento 06.
 
 ## Próximas etapas
 
-| Prioridade | Item | Contexto |
-| --- | --- | --- |
-| Alta | Verificar entrega em `dgarcia.com.br` | Confirmar versão publicada, HTTPS, redirecionamento permanente de `www` para a raiz, MIME e cache no provedor; não verificados nesta revisão local. |
-| Média | Validar contatos | Confirmar WhatsApp e e-mail antes da publicação externa. |
-| Média | Ativar Search Console | Verificar a propriedade de domínio, enviar sitemap, inspecionar homepage e PDF e acompanhar cobertura, consultas e Core Web Vitals. |
-| Média | Aprovar metadados sociais | Avaliar propostas de título, descrição e imagens antes de incluir Open Graph, Twitter Card ou favicon. |
+| Prioridade | Item                                  | Contexto                                                                                                                                            |
+| ---------- | ------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Alta       | Verificar entrega em `dgarcia.com.br` | Confirmar versão publicada, HTTPS, redirecionamento permanente de `www` para a raiz, MIME e cache no provedor; não verificados nesta revisão local. |
+| Média      | Validar contatos                      | Confirmar WhatsApp e e-mail antes da publicação externa.                                                                                            |
+| Média      | Ativar Search Console                 | Verificar a propriedade de domínio, enviar sitemap, inspecionar homepage e PDF e acompanhar cobertura, consultas e Core Web Vitals.                 |
+| Média      | Aprovar metadados sociais             | Avaliar propostas de título, descrição e imagens antes de incluir Open Graph, Twitter Card ou favicon.                                              |
 
 ## Sem bloqueio técnico
 
-O código está em estado de entrega finalizada, com manutenção evolutiva. A validação externa de publicação é separada do aceite local. Analytics, pixels e cookies continuam fora do escopo; o documento 08 permanece intacto.
+O código está em estado de entrega finalizada, com manutenção evolutiva para informações curriculares novas e aprovadas. A validação externa de publicação é separada do aceite local. Analytics, pixels e cookies continuam fora do escopo; o documento 08 permanece intacto.

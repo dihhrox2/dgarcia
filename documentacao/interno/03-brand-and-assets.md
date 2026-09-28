@@ -13,16 +13,16 @@ O site de Paulo Drefahl permanece somente como referência de atmosfera e estrut
 
 ## Inventário de retratos e logos
 
-| Arquivo ou grupo | Uso atual | Situação |
-| --- | --- | --- |
-| `assets/diego-garcia-profile-20260908.png` e `assets/diego-garcia-profile-800.webp` | Retrato exibido no cartão de perfil | PNG original preservado; WebP responsivo priorizado com fallback no HTML |
-| `assets/diego-garcia-profile.png` | Arquivo mantido no repositório | Não é o retrato referenciado atualmente pelo HTML |
-| Dez logos em `assets/logo-*.png` | Carrossel do perfil | PNGs originais com canal alpha, carregados sob demanda para Cisco, Cruzeiro do Sul, Cimcorp, Alura, Microsoft 365 Certified, Solutis, Caixa, Sabesp, Codex e Fundacc |
-| `assets/fonts/caveat-latin*.woff2` | Assinatura visual no rodapé | Arquivos oficiais da Caveat, servidos localmente nos pesos 500–600 com cobertura latina e latina estendida |
-| Logos dos cases | Cartões RPE6 Strength Academy e Essentia Health | Publicados com os respectivos cases |
+| Arquivo ou grupo                                                                    | Uso atual                                       | Situação                                                                                                                                                             |
+| ----------------------------------------------------------------------------------- | ----------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `assets/diego-garcia-profile-20260908.png` e `assets/diego-garcia-profile-800.webp` | Retrato exibido no cartão de perfil             | PNG original preservado; WebP responsivo priorizado com fallback no HTML                                                                                             |
+| `assets/diego-garcia-profile.png`                                                   | Arquivo mantido no repositório                  | Não é o retrato referenciado atualmente pelo HTML                                                                                                                    |
+| Dez logos em `assets/logo-*.png`                                                    | Carrossel do perfil                             | PNGs originais com canal alpha, carregados sob demanda para Cisco, Cruzeiro do Sul, Cimcorp, Alura, Microsoft 365 Certified, Solutis, Caixa, Sabesp, Codex e Fundacc |
+| `assets/fonts/caveat-latin*.woff2`                                                  | Assinatura visual no rodapé                     | Arquivos oficiais da Caveat, servidos localmente nos pesos 500–600 com cobertura latina e latina estendida                                                           |
+| Logos dos cases                                                                     | Cartões RPE6 Strength Academy e Essentia Health | Publicados com os respectivos cases                                                                                                                                  |
 
 ## Política de manutenção
 
-Na entrega final de 10/09/2026, todos os assets e o PDF permaneceram byte a byte idênticos à referência anterior à refatoração, verificados por SHA-256. PNGs originais transparentes são a fonte definitiva dos logos; não substituir por variantes degradadas. Retrato, Caveat local, cores e tempos de animação foram preservados. Nova copy depende de aprovação prévia.
+Na refatoração de 28/09/2026, os 17 arquivos sob `assets/`, incluindo PDF, logos, retratos e fontes, permaneceram idênticos byte a byte ao snapshot Git `de47817`; o documento 08 também permaneceu inalterado. PNGs originais transparentes são a fonte definitiva dos logos; não substituir por variantes degradadas. Retrato, Caveat local, cores e tempos de animação foram preservados. As declarações de fonte agora estão junto dos demais estilos em `styles.css`; os arquivos WOFF2 não foram modificados. Nova copy depende de aprovação prévia.
 
 Todo novo asset exige origem, autorização de uso, finalidade e registro no changelog. Não há logotipo independente aprovado; o nome tipográfico é apenas texto de interface.

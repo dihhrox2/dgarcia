@@ -1,4 +1,4 @@
-(() => {
+export function initializeAccordions() {
   const selectors = [
     ".record-toggle",
     ".skill-toggle",
@@ -29,4 +29,4 @@
     if (opening && toggle.matches(".skill-toggle"))
       window.PortfolioMotion.scrollToOpenedSkill(toggle);
   });
-})();
+}

@@ -1,5 +1,32 @@
 # Changelog
 
+## 28/09/2026 — humanização da copy pública
+
+- Revisados os textos visíveis do perfil, das oito abas e da interface do leitor de currículo, com foco em frases mais naturais e diretas.
+- Preservados nomes oficiais, dados curriculares, valores, contatos, links, assinatura pessoal, atributos não visíveis e o PDF original.
+- Atualizada a redação dos cards de projetos e serviços sem acrescentar promessas ou informações.
+- Conferidos os estados móveis (393 px) e desktop (1440 px); 34 testes Playwright e a checagem de formatação passaram. O SHA-256 do PDF permaneceu igual ao baseline.
+
+## 28/09/2026 — polimento visual
+
+- Refinado o respiro vertical móvel entre navegação, perfil e painel de 12 px para 16 px, mantendo o espaçamento desktop e as proporções do perfil.
+- Adicionado feedback de pressionamento de 0,98× com transição curta e curva ease-out aos controles principais; navegação por teclado e `prefers-reduced-motion` não recebem movimento.
+- Limitado hover a ponteiro fino, com transição de cor nos links de ação; no tema claro, o texto dos botões inativos da navegação também fica azul ao passar o mouse. A cor da aba ativa foi preservada.
+- Preservados conteúdo, paleta, assets, canvas, tempos de entrada, fades e acordeões. Atualizada a versão de cache do CSS.
+- Capturadas 80 combinações visuais antes e depois: oito abas × cinco larguras × dois temas; testes Playwright: 34 aprovados, incluindo espaçamento, hover nos dois temas, pressionamento, teclado e movimento reduzido.
+
+## 28/09/2026 — refatoração final
+
+- Refatorado o controlador monolítico em módulos nativos para navegação, tema, perfil/carrossel, canvas, movimento, acordeões e navegação móvel, iniciados por `app.js`. Sem framework, bundler ou dependência de execução.
+- Consolidada em `styles.css` a ordem original das 16 folhas CSS e removidos os arquivos agora agregados; uma única requisição local de estilo substitui as 16 anteriores.
+- Adicionadas dependências somente de desenvolvimento para Playwright e Prettier, configuração para o servidor local e 32 testes automatizados repetíveis.
+- Formatados HTML, CSS, JavaScript e documentação afetados; mantidos os estilos, a ordem da cascata e o conteúdo público.
+- Comparados 80 estados visuais do snapshot Git `de47817` com a versão atual: zero pixels diferentes fora das áreas variáveis mascaradas. Testes Playwright: 32 aprovados; verificação de formatação e sintaxe JS aprovadas.
+- Integridade confirmada: 17 assets, inclusive currículo, retrato, logos e Caveat, e documento 08 permanecem byte a byte iguais ao snapshot Git.
+- Lighthouse 13.5.0 local: mobile 46→49 e LCP 7,1→5,6 s; desktop 98→99 e LCP 1,0→0,9 s. Acessibilidade 96, boas práticas 77 e SEO 100 em ambos. CLS mobile 0,766 e desktop 0,002 repetiram os valores do snapshot no mesmo ambiente.
+- Documentado que os resultados são de laboratório: extensão do Kaspersky injeta JavaScript HTTP, `/favicon.ico` não existe, a folha CSS continua render-blocking e INP não foi medido. Nenhuma configuração de publicação ou copy foi alterada.
+- Atualizados README e documentos internos 02, 03, 06 e 07; documentos 04 e 05 receberam apenas padronização de formatação; documento 08 preservado.
+
 ## 10/09/2026 — entrega final
 
 - Versão de entrega finalizada; manutenção evolutiva para novas informações curriculares.

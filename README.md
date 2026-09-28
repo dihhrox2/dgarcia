@@ -4,7 +4,7 @@ Site estático de marca pessoal de Diego Garcia, desenvolvido com HTML, CSS e Ja
 
 ## Estado atual
 
-**Versão de entrega finalizada; manutenção evolutiva para novas informações curriculares.** Validação local concluída em 10/09/2026, com evidências e limites registrados no documento de QA. Novas experiências, cursos, certificações e cases poderão ser incorporados mediante aprovação de conteúdo.
+**Versão de entrega finalizada; manutenção evolutiva para novas informações curriculares.** Refatoração estrutural, polimento visual e validação local concluídos em 28/09/2026; resultados e limites estão registrados no documento de QA. Novas experiências, cursos, certificações e cases poderão ser incorporados mediante aprovação de conteúdo.
 
 - Página única com oito abas: Sobre, Experiência, Formação, Habilidades, Projetos, Serviços, Informações adicionais e Contato.
 - Navegação por hash, histórico do navegador, foco por teclado e tema claro/escuro persistente.
@@ -15,16 +15,16 @@ Site estático de marca pessoal de Diego Garcia, desenvolvido com HTML, CSS e Ja
 - WhatsApp, e-mail, cidade e currículo em PDF publicados; o currículo abre em uma página visualizadora local, em nova aba.
 - Base de SEO preparada para `https://dgarcia.com.br/`: canônica, `robots.txt`, sitemap da homepage e do PDF, e dados estruturados de site e pessoa.
 
-## Como executar
+## Desenvolvimento e validação
 
-Abra `index.html` por um servidor HTTP local. Não há dependências, etapa de build, backend ou configuração de publicação no repositório.
+O site não tem dependências de execução, framework, backend ou etapa de build. Para instalar as ferramentas de desenvolvimento e rodar a suíte Playwright, use `npm install`, `npx playwright install chromium` e `npm test`. Os testes iniciam um servidor local em `http://127.0.0.1:8080/` quando necessário. `npm run format:check` verifica a formatação.
 
 ## Estrutura técnica
 
 - `index.html`: conteúdo, semântica e abas da página.
-- `styles.css`: base visual do layout.
-- CSS especializado para navegação, perfil, experiência, formação, habilidades, serviços, tema, acessibilidade, superfícies, animações, carrossel e barra de rolagem.
-- `script.js`: controlador único de abas, hashes e ARIA, tema, carrossel, digitação e canvas; `motion.js`: efeitos; `accordions.js`: estado compartilhado dos quatro grupos expansíveis; `mobile-navigation.js`: navegação flutuante.
+- `styles.css`: estilos visuais consolidados na ordem original das 16 folhas de estilo.
+- `app.js`: inicialização explícita de módulos nativos do navegador — `navigation.js` (abas, hashes, histórico e ARIA), `theme.js`, `profile.js` (atuação, carrossel e assinatura), `background-network.js`, `motion.js`, `accordions.js` e `mobile-navigation.js`.
+- `tests/portfolio.spec.js`: 34 verificações de navegação, semântica, interações, movimento, layout, fonte e currículo.
 - `assets/`: PNGs transparentes originais dos logos, retrato original e variante WebP, fonte Caveat local, logos dos cases e currículo em PDF preservado.
 - `robots.txt` e `sitemap.xml`: instruções públicas de rastreamento e descoberta para `dgarcia.com.br`.
 
@@ -40,6 +40,6 @@ Abra `index.html` por um servidor HTTP local. Não há dependências, etapa de b
 - [Matriz de evidências Sabesp](documentacao/interno/08-matriz-evidencias-sabesp.md)
 - [Changelog](documentacao/interno/CHANGELOG.md)
 
-Esta entrega confirma o funcionamento local; não certifica uma nova publicação em produção. Domínio, HTTPS, redirecionamento de `www`, cabeçalhos HTTP e Google Search Console não foram modificados nem verificados nesta rodada. Analytics, pixels e cookies não foram adicionados.
+Esta entrega confirma o funcionamento local; não certifica uma nova publicação em produção. Domínio, HTTPS, redirecionamento de `www`, cabeçalhos HTTP e Google Search Console não foram modificados nem verificados nesta rodada. Analytics, pixels e cookies não foram adicionados. A auditoria Lighthouse local comparada ao snapshot Git inicial está no documento 06; é uma medição de laboratório, não dado de campo.
 
 Preservar em futuras refatorações: canvas animado mesmo sob redução de movimento (com pausa quando a página está oculta), qualidade e transparência dos PNGs, contraste aprovado e aprovação prévia para qualquer nova copy.

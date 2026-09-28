@@ -1,4 +1,4 @@
-(() => {
+export function initializeMotion() {
   const tabDuration = 100;
   const contentDuration = 300;
   const tabItemsDuration = 200;
@@ -254,4 +254,4 @@
   queueTabItemsMotion(
     panels.find((panel) => panel.classList.contains("active")),
   );
-})();
+}

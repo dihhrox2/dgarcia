@@ -8,18 +8,18 @@
 
 ## Conteúdo público atual
 
-| Área | Estado atual |
-| --- | --- |
-| Perfil | Retrato, nome Diego Garcia, atuação rotativa, cidade e carrossel de dez logos. |
-| Sobre | Apresentação profissional, informações pessoais e seis competências centrais. |
-| Experiência | Sete vínculos com empresa, período, cargo e descrição expansível. |
-| Formação | Ensino médio, Sistemas de Informação, Curso de Direito e timeline expansível de cursos e certificação. Os marcadores anuais encerram os grupos de 2026, 2025, 2024, 2021, 2011 e 2004. |
-| Habilidades | Tecnologia e operação; Criação e inovação. |
-| Projetos | Cases online RPE6 Strength Academy e Essentia Health, com acesso aos respectivos sites. |
-| Serviços | Três categorias expansíveis: TI, criação de conteúdo e soluções web, com itens, valores públicos e observações de cobrança. |
-| Informações adicionais | Operação de TI corporativa, escotismo, habilitação amadora e experiência complementar. |
-| Contato | WhatsApp com mensagem inicial, e-mail e cidade publicados. |
-| Currículo | PDF autorizado publicado, aberto em página visualizadora local em nova aba. |
+| Área                   | Estado atual                                                                                                                                                                           |
+| ---------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Perfil                 | Retrato, nome Diego Garcia, atuação rotativa, cidade e carrossel de dez logos.                                                                                                         |
+| Sobre                  | Apresentação profissional, informações pessoais e seis competências centrais.                                                                                                          |
+| Experiência            | Sete vínculos com empresa, período, cargo e descrição expansível.                                                                                                                      |
+| Formação               | Ensino médio, Sistemas de Informação, Curso de Direito e timeline expansível de cursos e certificação. Os marcadores anuais encerram os grupos de 2026, 2025, 2024, 2021, 2011 e 2004. |
+| Habilidades            | Tecnologia e operação; Criação e inovação.                                                                                                                                             |
+| Projetos               | Cases online RPE6 Strength Academy e Essentia Health, com acesso aos respectivos sites.                                                                                                |
+| Serviços               | Três categorias expansíveis: TI, criação de conteúdo e soluções web, com itens, valores públicos e observações de cobrança.                                                            |
+| Informações adicionais | Operação de TI corporativa, escotismo, habilitação amadora e experiência complementar.                                                                                                 |
+| Contato                | WhatsApp com mensagem inicial, e-mail e cidade publicados.                                                                                                                             |
+| Currículo              | PDF autorizado publicado, aberto em página visualizadora local em nova aba.                                                                                                            |
 
 ## Conteúdo aprovado relevante
 
