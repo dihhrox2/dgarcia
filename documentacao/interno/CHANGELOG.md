@@ -1,5 +1,18 @@
 # Changelog
 
+## 29/10/2026 — enquadramento completo da arte do Adaptive Graphics Forever
+
+- Aplicada ao thumbnail do AGF a classe `project-thumb--contain`, já usada nos demais cards, para exibir a arte quadrada inteira sem recorte.
+- Mantidos a faixa, o fundo escuro, as dimensões e os demais conteúdos do card.
+- Atualizado o teste Playwright para validar o encaixe completo da imagem.
+
+## 29/10/2026 — inclusão do Adaptive Graphics Forever
+
+- Adicionado como projeto mais recente no topo da aba Projetos, com a copy aprovada e link para o CurseForge em nova aba.
+- Publicada a arte fornecida pelo autor sem conversão; o SHA-256 da cópia corresponde ao original.
+- Preservados os cards existentes e o layout panorâmico atual, com a imagem preenchendo a faixa e mantendo o carregamento lazy.
+- Adicionado teste Playwright para ordem, conteúdo, carregamento da imagem e atributos do link.
+
 ## 28/09/2026 — humanização da copy pública
 
 - Revisados os textos visíveis do perfil, das oito abas e da interface do leitor de currículo, com foco em frases mais naturais e diretas.

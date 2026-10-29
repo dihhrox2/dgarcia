@@ -59,6 +59,51 @@ test.describe("navegação e conteúdo", () => {
     expect(stylesheets).toEqual(["/styles.css"]);
   });
 
+  test("exibe o Adaptive Graphics Forever como projeto mais recente", async ({
+    page,
+  }) => {
+    await page.goto("/#projetos");
+
+    const cards = page.locator("#project-grid .project-card");
+    await expect(cards).toHaveCount(3);
+
+    const card = cards.first();
+    await expect(card.locator(".project-type")).toHaveText(
+      "ADDON PUBLICADO · PROJETO AUTORAL",
+    );
+    await expect(card.getByRole("heading", { level: 3 })).toHaveText(
+      "Adaptive Graphics Forever",
+    );
+    await expect(card.locator("p")).toHaveText(
+      "Addon para World of Warcraft: Forever que ajusta configurações gráficas compatíveis para manter o FPS na faixa escolhida. Aprende o custo de cada alteração e guarda perfis estáveis por mapa e subzona.",
+    );
+
+    const image = card.locator("img");
+    await expect(image).toHaveAttribute(
+      "src",
+      "assets/adaptive-graphics-forever.png",
+    );
+    await expect(image).toHaveAttribute("width", "1254");
+    await expect(image).toHaveAttribute("height", "1254");
+    await expect(image).toHaveAttribute("loading", "lazy");
+    await expect
+      .poll(() => image.evaluate((element) => element.naturalWidth))
+      .toBe(1254);
+    await expect
+      .poll(() =>
+        image.evaluate((element) => getComputedStyle(element).objectFit),
+      )
+      .toBe("contain");
+
+    const link = card.getByRole("link", { name: "Ver no CurseForge ↗" });
+    await expect(link).toHaveAttribute(
+      "href",
+      "https://www.curseforge.com/wow/addons/adaptive-graphics-forever",
+    );
+    await expect(link).toHaveAttribute("target", "_blank");
+    await expect(link).toHaveAttribute("rel", "noreferrer");
+  });
+
   for (const [hash, id] of tabs) {
     test(`abre a aba ${hash} por hash`, async ({ page }) => {
       await page.goto(`/#${hash}`);

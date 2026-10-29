@@ -20,6 +20,7 @@ O site de Paulo Drefahl permanece somente como referência de atmosfera e estrut
 | Dez logos em `assets/logo-*.png`                                                    | Carrossel do perfil                             | PNGs originais com canal alpha, carregados sob demanda para Cisco, Cruzeiro do Sul, Cimcorp, Alura, Microsoft 365 Certified, Solutis, Caixa, Sabesp, Codex e Fundacc |
 | `assets/fonts/caveat-latin*.woff2`                                                  | Assinatura visual no rodapé                     | Arquivos oficiais da Caveat, servidos localmente nos pesos 500–600 com cobertura latina e latina estendida                                                           |
 | Logos dos cases                                                                     | Cartões RPE6 Strength Academy e Essentia Health | Publicados com os respectivos cases                                                                                                                                  |
+| `assets/adaptive-graphics-forever.png`                                              | Thumbnail do card Adaptive Graphics Forever     | Imagem fornecida pelo autor, mantida byte a byte e exibida no projeto publicado no CurseForge                                                                        |
 
 ## Política de manutenção
 
